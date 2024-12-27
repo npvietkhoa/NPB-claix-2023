@@ -5,5 +5,5 @@ NAS Parallel Benchmarks for Claix 2023
 ```
 make suite \
   SFILE=config/suite.BT.def \
-  SUBCLASS=full
+  SUBTYPE=full
 ```
