@@ -7,3 +7,16 @@ make suite \
   SFILE=config/suite.BT.def \
   SUBTYPE=full
 ```
+
+- Instrument suite with Score-P for BT benchmark
+
+> **Note:** Ensure that you have loaded the Score-P module on the cluster before running this command.
+
+```
+make suite \
+  SFILE=config/suite.BT.def \
+  FLINK="scorep ${MPIFC}" \
+  SUBTYPE=full
+```
+
+
