@@ -15,7 +15,7 @@ make suite \
 ```
 make suite \
   SFILE=config/suite.BT.def \
-  FLINK="scorep ${MPIFC}" \
+  FLINK="scorep ${MPIFC}" --io=posix \
   SUBTYPE=full
 ```
 
