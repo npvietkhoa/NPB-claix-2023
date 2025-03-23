@@ -10,12 +10,12 @@ make suite \
 
 - Instrument suite with Score-P for BT benchmark
 
-> **Note:** Ensure that you have loaded the Score-P module on the cluster before running this command.
+> **Note:** Ensure that you have loaded the Score-P module on the cluster before running this command. Also include posix function calls in the trace.
 
 ```
 make suite \
   SFILE=config/suite.BT.def \
-  FLINK="scorep ${MPIFC}" --io=posix \
+  FLINK="scorep --io=posix ${MPIFC}" \
   SUBTYPE=full
 ```
 
